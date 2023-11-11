@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 238, 215);
+}
+body .container {
+  width: 40%;
+  height: 80%;
+  background-color: #ffcd29;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+body .container .list_add_remove {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .list_add_remove .items {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 1rem;
+}
+body .container .list_add_remove .items .tasklist {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body .container .list_add_remove .items .tasklist span {
+  font-family: bebas neue;
+  font-size: 3rem;
+  color: rgba(54, 53, 53, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+body .container .list_add_remove .items .btns {
+  width: 60%;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.8rem;
+}
+body .container .list_add_remove .items .btns input {
+  width: 20%;
+  height: 100%;
+  text-transform: capitalize;
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  outline: none;
+  font-family: open sans;
+}
+body .container .list_add_remove .items .btns input:hover {
+  background-color: #ffcd29;
+  cursor: pointer;
+}
+body .container .list_add_remove .items .btns input[type=text] {
+  display: none;
+  width: 75%;
+  outline: none;
+  padding: 0 0.4rem;
+}
+body .container .list_add_remove .items .btns input[type=text]:hover {
+  background: rgb(255, 255, 255);
+  cursor: text;
+}
+body .container .list_of_tasks {
+  width: 100%;
+  height: 85%;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: none;
+  overflow-y: scroll;
+}
+body .container .list_of_tasks::-webkit-scrollbar {
+  display: none;
+}
+body .container .list_of_tasks .new_created {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  width: 90%;
+  min-height: 4rem;
+}
+body .container .list_of_tasks .new_created .txt {
+  overflow-wrap: break-word;
+  width: 50%;
+  font-size: 2.4rem;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+  font-family: open sans;
+  text-transform: capitalize;
+}
+body .container .list_of_tasks .new_created .for_btns {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+body .container .list_of_tasks .new_created .for_btns .btn {
+  margin: 0.4rem;
+  width: 40%;
+  height: 3rem;
+  text-transform: capitalize;
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  outline: none;
+  font-family: open sans;
+}
+body .container .list_of_tasks .new_created .for_btns .btn[value=done] {
+  margin-left: 2rem;
+}
+body .container .list_of_tasks .new_created .for_btns .btn[value=done]:hover {
+  cursor: url("done.svg"), default;
+  background: rgba(60, 191, 43, 0.6);
+}
+body .container .list_of_tasks .new_created .for_btns .btn[value=undo] {
+  margin-left: 2rem;
+}
+body .container .list_of_tasks .new_created .for_btns .btn[value=undo]:hover {
+  cursor: url("undo.svg"), default;
+  background: rgba(45, 45, 45, 0.6);
+}
+body .container .list_of_tasks .new_created .for_btns .btn[value=delete]:hover {
+  cursor: url("delete.svg"), default;
+  background: rgba(235, 75, 75, 0.8);
+}/*# sourceMappingURL=main.css.map */
